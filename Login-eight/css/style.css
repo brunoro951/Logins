@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.container-div {
+  width: 50%;
+  height: 100vh;
+}
+.container-div:nth-child(1) {
+  background-color: #fefae0;
+}
+.container-div:nth-child(2) {
+  background-color: #dda15e;
+}
+.login {
+  position: absolute;
+  width: auto;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.login-div {
+  width: 350px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-div:nth-child(1) {
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+}
+.login-div:nth-child(2) {
+  background-color: #fefae0;
+  border-radius: 0 10px 10px 0;
+}
+.sofa {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.pieza {
+  width: 300px;
+  filter: drop-shadow(2px 3px 5px #dda25ebc);
+}
+.contenido {
+  width: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button,
+input {
+  padding: 10px;
+  outline: none;
+}
+a {
+  text-align: center;
+  color: #bd6705;
+  text-decoration: none;
+}
+button {
+  background-color: #dda15e;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login {
+    width: auto;
+    height: 300px;
+  }
+  .login-div {
+    width: 280px;
+  }
+
+  .pieza {
+    width: 250px;
+    filter: drop-shadow(2px 3px 5px #dda25ebc);
+  }
+}
+@media only screen and (max-width: 575px) {
+  .login {
+    width: 300px;
+    height: 300px;
+  }
+  .login-div {
+    width: 100%;
+  }
+  .login-div:nth-child(1) {
+    border-radius: 10px;
+  }
+  .login-div:nth-child(2) {
+    display: none;
+  }
+}
