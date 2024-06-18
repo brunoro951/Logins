@@ -13,10 +13,13 @@ body {
   display: flex;
   box-shadow:2px 2px 2px 2px #c69483bd;
   border-radius: 5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .container-login > div {
   width: 300px;
-  height: 500px;
+  height: 450px;
   display: flex;
   align-items:center;
   justify-content:center;
@@ -37,9 +40,9 @@ input {
   border: 2px solid #dac8c2;
 }
 .conteiner-content {
+  width:90%;
   display: flex;
   flex-direction: column;
-  margin: 30px;
   gap: 15px;
 }
 img {
@@ -69,18 +72,24 @@ input:focus {
 @media screen and (max-width: 768px) {
 
   .container-login {
-    width: 500px;
+    width: auto;
+    height:400px;
   }
   .container-login > div {
     display: flex;
+    height:20%;
     align-items: center;
     height: auto;
+  }
+  .container-login > div:nth-child(2){
+    height:100%;
   }
 }
 @media only screen and (max-width: 600px) {
 
   .container-login {
-    width: auto;
+    width: 300px;
+    height:;
     margin: 20px;
     flex-direction: column;
   }
@@ -92,7 +101,7 @@ input:focus {
     display: none;
   }
   .conteiner-content {
-    width: 100%;
+    width: 90%;
     gap: 15px;
   }
   input {
