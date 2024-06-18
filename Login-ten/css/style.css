@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: auto;
+  box-shadow: 1px 1px 2px 2px #71573163;
+  display: flex;
+  border-radius: 20px;
+}
+.container-div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-div {
+  width: 300px;
+  margin: 10px;
+}
+h1 {
+  font-family: "Playwrite PL", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+label {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container-div > img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  padding: 9px;
+  outline: none;
+  border: 1px solid rgb(135, 135, 135);
+  border-radius: 10px;
+}
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fcb720;
+  color: aliceblue;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container-div {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+  .container-div {
+    width: 250px;
+  }
+  .container-div:nth-child(2) {
+    height: 200px;
+  }
+  h1{
+    font-size:15px;
+  }
+  label,button{
+    font-size: 12px;
+  }
+  input{
+    padding: 7px;
+  }
+  button{
+    padding: 10px;
+  }
+  img {
+    object-fit: cover;
+  }
+}
