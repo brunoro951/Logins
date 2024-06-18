@@ -17,6 +17,9 @@ body {
 .container-login > div {
   width: 300px;
   height: 500px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 }
 h2 {
   text-align: center;
@@ -38,8 +41,6 @@ input {
   flex-direction: column;
   margin: 30px;
   gap: 15px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 img {
   width: 100%;
@@ -74,10 +75,6 @@ input:focus {
     display: flex;
     align-items: center;
     height: auto;
-  }
-  .conteiner-content {
-    margin-top: 10px;
-    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 600px) {
