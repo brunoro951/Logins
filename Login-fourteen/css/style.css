@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-input: rgba(0, 0, 0, 0.341);
+  --background-button: rgba(0, 0, 0, 0.84);
+  --color: white;
+  --bacground-body: rgb(251, 241, 228);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bacground-body);
+}
+
+body,
+.container,
+.container-content,
+.container-botton {
+  display: flex;
+}
+body,
+.container-botton,
+.container {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 300px;
+  height: 520px;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  background-image: url("../img/2e6480a894f1779d059c9016971ee1ae.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h1 {
+  color: var(--color);
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+h1,
+.container-content,
+button {
+  margin: 0.62rem;
+}
+.container-content {
+  flex-direction: column;
+  background-color: var(--color);
+  padding: 0.63rem;
+  gap: 0.45rem;
+  margin-bottom: 10px;
+  width: 70%;
+}
+input {
+  width: 100%;
+  padding: 0.45rem;
+  outline: none;
+  border: 1px solid var(--background-input);
+}
+.container-content,
+input,
+button {
+  border-radius: 10px;
+}
+
+input,
+label,
+.container-botton,
+button {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+button {
+  background-color: var(--background-button);
+  border: none;
+  padding: 0.75rem;
+  outline: none;
+  width: 70%;
+  color: var(--color);
+}
+
+.container-botton {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background-color: var(--color);
+  width: 100%;
+  height: 100px;
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    width: auto;
+  }
+  .container-content {
+    width: 220px;
+    margin: 1.25rem;
+  }
+}
